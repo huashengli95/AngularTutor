@@ -7,6 +7,7 @@ import { Student } from '../../shared/student.model';
   templateUrl: './server.component.html', // you can put real html here
   styleUrls: ['./server.component.css']
 })
+
 export class ServerComponent {
     serverId = 10;
     serverStatus = 'offLine';

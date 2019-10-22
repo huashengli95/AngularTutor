@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import {ServerComponent} from './server/server.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent
+    ServerComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -17,4 +19,5 @@ import {ServerComponent} from './server/server.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
