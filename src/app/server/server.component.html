@@ -1,0 +1,26 @@
+<h4>This is a component</h4>
+<p>Server ID with {{ServerID}} is {{serverStatus}}</p>
+<p>{{'ServerID'}} ID with {{ServerID}} is {{getServerStatus()}}</p>
+<hr>
+
+<h4>This is a counter</h4>
+<p> {{counter}}  </p>
+<button class = "btn btn-primary" (click) = "countplus()" style="margin-right: 10px" >Add one</button>
+<button class = "btn btn-primary" (click) = "reset()">reset</button>
+<hr>
+
+<h4>this is a input box with binding</h4>
+<div>
+  <span>User Name:</span>
+  <input type = "text" (input)="onUpdateinput($event)">
+</div>
+<div>
+  <span>Pass Word:</span>
+  <input type = "password">
+</div>
+<div *ngIf="isLogin" class="informBoxBoarder">You have logged in as {{ userName }}</div>
+<button class = "btn btn-primary" (click) = "login()" style="margin-right: 10px">Login</button>
+<button class = "btn btn-primary" (click) = "logout()">Logout</button>
+<hr>
+
+<h4>Angular two way binding</h4>s
