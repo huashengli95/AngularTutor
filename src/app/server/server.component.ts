@@ -13,6 +13,9 @@ export class ServerComponent {
   counter = 0;
   userName: string;
   isLogin = false;
+  Students: Student[] = [new Student('huashengli', 'software'),
+                         new Student('fenggao', 'ECE'),
+                         new Student('Boxingliu', 'game design')];
 
   getServerStatus () {
     return this.serverStatus;

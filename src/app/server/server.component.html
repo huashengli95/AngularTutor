@@ -23,4 +23,23 @@
 <button class = "btn btn-primary" (click) = "logout()">Logout</button>
 <hr>
 
-<h4>Angular two way binding</h4>s
+<h4>Angular two way binding</h4>
+<div>
+  <span>User Name:</span>
+  <input type = "text" [(ngModel)]="userName">
+</div>
+<div>
+  <span>Pass Word:</span>
+  <input type = "password">
+</div>
+<div *ngIf="isLogin">logged in as {{ userName }}</div>
+<button class = "btn btn-primary" (click)="login()" style="margin-right: 10px">login</button>
+<button class = "btn btn-primary" (click)="logout()">logout</button>
+<hr>
+
+<h4>Student list implemented by ng for</h4>
+<div *ngFor = "let student of Students">
+  <div>Name:<span> {{student.name}} </span></div>
+  <div>Major:<span> {{student.major}}</span></div>
+</div>
+
